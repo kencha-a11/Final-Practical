@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+}
+
+.dashboard-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+button,
+a button {
+    width: 100%; /* Make buttons the same width */
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px; /* Consistent padding */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover,
+a button:hover {
+    background-color: #45a049;
+}
+
+a {
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form button {
+    background-color: #f44336; /* Different color for logout button */
+}
+
+form button:hover {
+    background-color: #e53935;
+}
