@@ -17,7 +17,9 @@
                 <div class="post">
                     <h2>{{ $post->title }}</h2>
                     <p>{{ $post->body }}</p>
-                    <a href="{{route('posts.show', $post->id)}}"><button>show post</button></a>
+                    <a href="{{route('posts.show', $post->id)}}">
+                        <button>show post</button>
+                    </a>
                 </div> 
             @empty
                 <p>No posts available.</p>

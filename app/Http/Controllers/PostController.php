@@ -108,9 +108,9 @@ class PostController extends Controller
 
         if ($user && $user->id === $post->users_id) {
             $post->delete();
-            return redirect()->route('login')->with('success', 'logout successfully.');
+            return redirect()->route('posts.index')->with('success', 'logout successfully.');
         }
 
-        return redirect()->route('posts.index')->with('error', 'loging out other user');
+        return redirect()->route('login')->with('error', 'loging out other user');
     }
 }

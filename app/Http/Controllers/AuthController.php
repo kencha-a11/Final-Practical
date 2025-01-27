@@ -62,6 +62,9 @@ class AuthController extends Controller
         return view('auth.dashboard', compact('posts'));
    }
 
+
+
+   
    public function logout(Request $request)
     {
         Auth::logout();

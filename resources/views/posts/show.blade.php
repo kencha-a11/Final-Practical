@@ -10,6 +10,9 @@
     <div class="container">
         <h1> {{ $post->title }}</h1>
         <p> {{ $post->body }}</p>
+        <hr>
+        <p>created: {{ $post->created_at}}</p>
+        <p>updated: {{ $post->updated_at}}</p>
         <br>
         <a href="{{ route('posts.edit', $post->id) }}"><button>Edit Here</button></a>
         
